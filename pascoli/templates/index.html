@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../static/style.css" rel="stylesheet" type="text/css" />
+    <title>Gabriel Integração</title>
+  </head>
+  <body class="center">
+    <h1>Integração Gabriel</h1>
+    <div>
+      <h2>Posição atual do robô:</h2>
+      <h4 class="pos">{{coordenadas[0]}}</h4>
+    </div>
+    <div>
+      <h2>Adicionar posição do robo</h2>
+      <form action="/post_posicao" method="POST">
+        <div class="n">
+          <label>Posição X: </label>
+          <input type="number" step="any" name="x"/ >
+          <br />
+
+          <label>Posição Y: </label>
+          <input type="number" step="any" name="y"/ >
+          <br />
+
+          <label>Rotação : </label>
+          <input type="number" step="any" name="r"/ >
+          <br />
+          <br />
+        </div>
+        <div class="n">
+          <input type="submit" value="Adicionar Posição" />
+        </div>
+      </form>
+    </div>
+    <div>
+      <h2>Outras posições do robo:</h2>
+      <div class="pos">
+        {% for coord in coordenadas %}
+        <p class="position">{{coord}}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

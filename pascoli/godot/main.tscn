@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cso65lp8jpwf"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_diqvq"]
+[ext_resource type="Texture2D" uid="uid://bfo6pm1olhwdb" path="res://icon.svg" id="2_ixe01"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_diqvq")
+
+[node name="Robozinho" type="Sprite2D" parent="."]
+position = Vector2(572, 304)
+scale = Vector2(0.859375, 0.859375)
+texture = ExtResource("2_ixe01")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,41 @@
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.t-c {
+    text-align:center;
+}
+
+h2 {
+    text-align: center;
+}
+
+div {
+    border: 1px solid;
+}
+
+div .n{
+    border: none;
+    margin:auto;
+    text-align: center;
+}
+
+.pos {
+    border: none;
+    margin: auto;
+    text-align: justify;
+    padding-left: 12vw;
+}
+label {
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+}
+
+input {
+    margin: auto;
+    padding-left: 10px;
+}
